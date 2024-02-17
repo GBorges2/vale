@@ -27,7 +27,9 @@ class _HomeState extends State<Home> {
         telefone: '(47) 3387-0950',
         horario: 'Terça à Domingo das 7h às 19h',
         descricao:
-            'Confeitaria com bolos brasileiros e alemães, além de doces, cafés, sorvetes e um buffet casual para almoço.'),
+            'Confeitaria com bolos brasileiros e alemães, além de doces, cafés, sorvetes e um buffet casual para almoço.',
+        lat: '-26.740171147410905',
+        long: '-49.17630970317445'),
     Local(
         urlImagem: 'assets/img/restaurantes/bierwein.jpg',
         cidade: 'Pomerode',
@@ -36,7 +38,10 @@ class _HomeState extends State<Home> {
         telefone: '(47) 3306-6305',
         horario: 'Terça à Domingo das 17h às 23h',
         descricao:
-            'Pratos da culinária alemã como eisbein e marreco, mais salmão, picanha e pizza, em espaço rústico com varanda.'),
+            'Pratos da culinária alemã como eisbein e marreco, mais salmão, picanha e pizza, em espaço rústico com varanda.',
+        lat: '-26.fdsdd',
+        long: '-49.fdsds'),
+
     Local(
         urlImagem: 'assets/img/restaurantes/container.webp',
         cidade: 'Blumenau',
@@ -45,7 +50,9 @@ class _HomeState extends State<Home> {
         telefone: '(47) 3285-7185',
         horario: 'Terça à Domingo das 18h às 1h',
         descricao:
-            'Fábrica de cerveja artesanal inglesa mantém gastrobar intimista fino de menu europeu, à vista dos tonéis.'),
+            'Fábrica de cerveja artesanal inglesa mantém gastrobar intimista fino de menu europeu, à vista dos tonéis.',
+        lat: '-26.fsdfd',
+        long: '-49.fdssd'),
     Local(
         urlImagem: 'assets/img/restaurantes/mortadella.jpg',
         cidade: 'Blumenau',
@@ -54,7 +61,9 @@ class _HomeState extends State<Home> {
         telefone: '(47) 3037-6060',
         horario: 'Quinta à Domingo das 11h30 às 00h',
         descricao:
-            'Pizzas artesanais, além de massas, bruschettas, vinhos e cervejas, em casa rústica com arte e luz natural.'),
+            'Pizzas artesanais, além de massas, bruschettas, vinhos e cervejas, em casa rústica com arte e luz natural.',
+        lat: '-26.fsdfd',
+        long: '-49.fsdsfs'),
     Local(
         urlImagem: 'assets/img/restaurantes/biergarten.jpeg',
         cidade: 'Pomerode',
@@ -63,7 +72,9 @@ class _HomeState extends State<Home> {
         telefone: '(47) 3306-3995',
         horario: 'XXX',
         descricao:
-            'Restaurante com comida alemã e o chefe mais alemão do Brasil.'),
+            'Restaurante com comida alemã e o chefe mais alemão do Brasil.',
+        lat: '-26.fsfdss',
+        long: '-49.fdsfsdfsd'),
     Local(
         urlImagem: 'assets/img/restaurantes/BierDamm.jpg',
         cidade: 'Timbó',
@@ -72,7 +83,9 @@ class _HomeState extends State<Home> {
         telefone: '(47) 3091-0196',
         horario: 'XXX',
         descricao:
-            'Pratos típicos da culinária ítalo-germânica, além de chopes da região e vinhos selecionados'),
+            'Pratos típicos da culinária ítalo-germânica, além de chopes da região e vinhos selecionados',
+        lat: '-26.fsfsd',
+        long: '-49.dsfdsf'),
   ];
 
   @override

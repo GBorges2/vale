@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/model/local.dart';
 import 'package:untitled/pages/detailpage.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class RestauranteDetail implements DetailPage {
   @override
@@ -13,6 +14,12 @@ class RestauranteDetailPage extends StatelessWidget {
   final Local local;
 
   RestauranteDetailPage(this.local);
+
+  void abrirGoogleMaps(String long, String lat) async {
+    var urlMap =
+        "https://www.google.com/maps/search/?api=1&query=${long},${lat}";
+    await launchUrl(Uri.parse(urlMap));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,13 +53,20 @@ class RestauranteDetailPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  Text(
-                    local.cidade,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25,
+                  Expanded(
+                    child: Text(
+                      local.cidade,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
                     ),
                   ),
+                  IconButton(
+                      onPressed: () {
+                        abrirGoogleMaps(local.lat, local.long);
+                      },
+                      icon: Icon(Icons.location_on, color: Colors.white,))
                 ],
               ),
             ),
